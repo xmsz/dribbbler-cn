@@ -1,0 +1,140 @@
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+iframe,
+img,
+input,
+li,
+ol,
+p,
+span,
+textarea,
+ul {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+address,
+i {
+  font-style: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+b,
+body,
+div,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+p {
+  -webkit-text-size-adjust: none;
+  font-weight: 400;
+}
+
+article,
+aside,
+audio,
+details,
+figcaption,
+figure,
+footer,
+header,
+mark,
+menu,
+nav,
+option,
+path,
+section,
+select,
+summary,
+svg,
+time,
+video {
+  display: block;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button,
+input:focus,
+textarea:focus {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+a {
+  color: #333;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: ' ';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+@font-face {
+  font-family: 'zler';
+  /* project id 462857 */
+  src: url('./assets/icon/iconfont.eot');
+  src: url('./assets/icon/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('./assets/icon/iconfont.woff') format('woff'),
+    url('./assets/icon/iconfont.ttf') format('truetype'),
+    url('./assets/icon/iconfont.svg#iconfont') format('svg');
+}
+
+.icon-setting::before {
+  content: '\e633';
+  font-family: zler;
+}
+
+.icon-about::before {
+  content: '\e607';
+  font-family: zler;
+}
+
+html {
+  background: #000;
+}
