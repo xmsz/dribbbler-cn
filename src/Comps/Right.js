@@ -1,16 +1,10 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import PageAbout from './PageAbout';
 
-export default class Right extends Component {
+export class Right extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      choose: false,
-    };
-  }
-
-  chooseSwiper() {
-    this.setState({ choose: !this.state.choose });
   }
 
   render() {
@@ -26,8 +20,9 @@ export default class Right extends Component {
               </div>
               <div className="right">
                 <div
-                  className={`list-switch ${this.state.choose && 'choose'}`}
-                  onClick={this.chooseSwiper.bind(this)}
+                  className={`list-switch ${this.context.settingData
+                    .isAutoFull && 'choose'}`}
+                  onClick={this.context.setIsAutoFull}
                 >
                   <div className="swiper" />
                 </div>
@@ -40,3 +35,9 @@ export default class Right extends Component {
     );
   }
 }
+
+Right.contextTypes = {
+  settingData: PropTypes.object,
+  setIsAutoFull: PropTypes.func,
+};
+export default Right;

@@ -1,5 +1,9 @@
 import React from 'react';
 
+const goWebsite = () => {
+  chrome.tabs.create({ url: 'http://www.zcool.com.cn/u/940716' });
+};
+
 const PageAbout = () => (
   <div className="page-about">
     <div className="left">
@@ -13,7 +17,9 @@ const PageAbout = () => (
       <p className="intro">
         希望你会喜欢这个作品，如果有任何问题可以
         <br />
-        <a href="">给我留言</a>
+        <span className="a" href="" onClick={goWebsite}>
+          给我留言
+        </span>
       </p>
       <footer>
         <div className="email">

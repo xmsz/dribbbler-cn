@@ -14,22 +14,13 @@ class Left extends Component {
           name: 'about',
         },
       ],
-      date: new Date(),
     };
+
+    this.checkUpdata = this.checkUpdata.bind(this);
   }
 
-  componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timerID);
-  }
-
-  tick() {
-    this.setState({
-      date: new Date(),
-    });
+  checkUpdata() {
+    chrome.tabs.create({ url: 'http://www.zcool.com.cn/u/940716' });
   }
 
   render() {
@@ -49,7 +40,9 @@ class Left extends Component {
     return (
       <div className="pop-left">
         <ul>{List}</ul>
-        <div className="button-update">检查更新</div>
+        <div className="button-update" onClick={this.checkUpdata}>
+          检查更新
+        </div>
       </div>
     );
   }

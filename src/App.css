@@ -98,7 +98,8 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: #f8f8f8;
+  background: url('./assets/logo.png') no-repeat center;
+  background-size: cover;
   margin: 0 20px 0 0;
 }
 
@@ -131,10 +132,11 @@ body {
   line-height: 1.8;
 }
 
-.page-about p a {
+.page-about p .a {
   color: #ea4c89;
   font-weight: 500;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .page-about footer {
